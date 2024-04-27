@@ -1,15 +1,15 @@
 import { images, checkBoxData, confirm } from "../data/drowsinessDizzinessData";
 import Rectangle_768 from "../assets/img/Rectangle_768.png";
+import { textData } from "../data/textData";
 
 const DrowsinessDizzinessComponent = () => {
+  const spiels = textData.find((data) => data.id === "drowsiness-dizziness");
   return (
     <>
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_768} alt="Rectangle_750" />
-          <span className="muted-text">
-            H336: May cause drowsiness and dizziness
-          </span>
+          <span className="muted-text">{spiels?.title}</span>
         </div>
       </div>
       <div className="list-img">

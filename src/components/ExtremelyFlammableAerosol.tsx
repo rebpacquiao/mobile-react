@@ -1,13 +1,15 @@
 import { images, checkBoxData, confirm } from "../data/extremelyFlammableData";
 import Rectangle_750 from "../assets/img/Rectangle_750.png";
+import { textData } from "../data/textData";
 
 const ExtremelyFlammableAerosol = () => {
+  const spiels = textData.find((data) => data.id === "extremely-flammable");
   return (
     <>
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_750} alt="Rectangle_750" />
-          <span className="muted-text">H222: Extremely Flammable Aerosol</span>
+          <span className="muted-text">{spiels?.title}</span>
         </div>
       </div>
       <div className="list-img">
