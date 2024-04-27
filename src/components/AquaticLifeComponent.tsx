@@ -10,7 +10,9 @@ const AquaticLifeComponent = () => {
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_796} alt="Rectangle_750" />
-          <span className="muted-text">{spiel?.title}</span>
+          <h5 className="text-dark">
+            <strong>{spiel?.title}</strong>
+          </h5>
         </div>
       </div>
       <div className="list-img">

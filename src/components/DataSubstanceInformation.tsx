@@ -11,8 +11,8 @@ const DataSubstanceInformation = () => {
       <ul className="data-list">
         {data.map((item, index) => (
           <li key={index} className="data-item">
-            <strong className="mr-2">{item.title}:</strong>
-            <span className="muted-text">{item.value}</span>
+            <strong className="mr-2 text-sm sm:text-base">{item.title}:</strong>
+            <span className="text-sm sm:text-base">{item.value}</span>
           </li>
         ))}
       </ul>
@@ -47,10 +47,10 @@ const DataSubstanceInformation = () => {
         </label>
       </div>
       <div className="flex flex-col sm:flex-row">
-        <button className="mb-2 uppercase sm:mb-0 sm:mr-2 bg-mediumRisk hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
+        <button className="bg-mediumRisk uppercase md:mr-3 lg:mr-3 mb-4 hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full text-sm sm:mr-0 sm:text-base">
           {spiels?.dataSheet}
         </button>
-        <button className="bg-mediumRisk uppercase hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
+        <button className="bg-mediumRisk uppercase mb-4 hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full text-sm sm:text-base">
           {spiels?.assessmentPDF}
         </button>
       </div>

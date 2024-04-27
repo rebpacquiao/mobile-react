@@ -9,7 +9,9 @@ const SkinIrritationComponent = () => {
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_768} alt="Rectangle_750" />
-          <span className="muted-text">{spiels?.title}</span>
+          <h5 className="text-dark">
+            <strong>{spiels?.title}</strong>
+          </h5>
         </div>
       </div>
       <div className="list-img">
