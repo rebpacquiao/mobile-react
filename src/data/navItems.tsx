@@ -9,19 +9,19 @@ const navItems = [
   },
   {
     name: "Share",
-    href: "/coming-soon",
+    href: "/share",
   },
   {
     name: " Refer a friend",
-    href: "/coming-soon",
+    href: "/refer-friend",
   },
   {
     name: "Report an issue",
-    href: "/coming-soon",
+    href: "/report-issue",
   },
   {
     name: "Leave a review",
-    href: "/coming-soon",
+    href: "/leave-reivew",
   },
 ];
 
