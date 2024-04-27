@@ -1,15 +1,15 @@
 import { images, checkBoxData, confirm } from "../data/pressuredContainerData";
 import Rectangle_767 from "../assets/img/Rectangle_767.png";
+import { textData } from "../data/textData";
 
 const PressurizedContainerComponent = () => {
+  const spiels = textData.find((data) => data.id === "pressurized-container");
   return (
     <>
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_767} alt="Rectangle_750" />
-          <span className="muted-text">
-            H229: Pressurized Container May burst if heated
-          </span>
+          <span className="muted-text">{spiels?.title}</span>
         </div>
       </div>
       <div className="list-img">

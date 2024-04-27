@@ -1,13 +1,15 @@
 import { images, checkBoxData, confirm } from "../data/skinIrritationData";
 import Rectangle_768 from "../assets/img/Rectangle_768.png";
+import { textData } from "../data/textData";
 
 const SkinIrritationComponent = () => {
+  const spiels = textData.find((data) => data.id === "skin-irritation");
   return (
     <>
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_768} alt="Rectangle_750" />
-          <span className="muted-text">H315: Causes skin irritation</span>
+          <span className="muted-text">{spiels?.title}</span>
         </div>
       </div>
       <div className="list-img">

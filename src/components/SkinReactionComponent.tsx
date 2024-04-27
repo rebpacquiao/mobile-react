@@ -1,15 +1,15 @@
 import { images, checkBoxData, confirm } from "../data/skinReactionData";
 import Rectangle_768 from "../assets/img/Rectangle_768.png";
+import { textData } from "../data/textData";
 
 const SkinReactionComponent = () => {
+  const spiels = textData.find((data) => data.id === "skin-reaction");
   return (
     <>
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_768} alt="Rectangle_750" />
-          <span className="muted-text">
-            H317: May cause an allergic skin reaction
-          </span>
+          <span className="muted-text">{spiels?.title}</span>
         </div>
       </div>
       <div className="list-img">
