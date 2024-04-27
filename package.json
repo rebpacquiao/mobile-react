@@ -1,5 +1,5 @@
 {
-  "name": "sevron-project",
+  "name": "coshh-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.9.0",
+    "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.75.0",
+    "react-router-dom": "^6.23.0",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
@@ -24,6 +28,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "sass": "^1.75.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }
