@@ -1,6 +1,7 @@
 import { useState } from "react";
 import listings from "../data/riskAssesorListing";
 import Listing from "../components/riskAssesor";
+import TaskOperator from "./TaskOperator";
 import { textData } from "../data/textData";
 
 function SwitchComponent() {
@@ -55,7 +56,7 @@ function SwitchComponent() {
               </div>
             </>
           ) : (
-            <p>Coming Soon...</p>
+            <TaskOperator />
           )}
         </div>
       </div>

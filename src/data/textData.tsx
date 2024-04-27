@@ -68,4 +68,9 @@ export const textData = [
     content:
       " I confirm that I have read & understood the content of the above assessment, and that I have been instructed on the hazards & control measures associated with the task including the task specific information. I also confirm that if the work environment changes or other hazards occur I will bring it to the attention of my immediate supervisor.",
   },
+  {
+    id: "lorem-ipsum",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+  },
 ];

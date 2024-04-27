@@ -21,7 +21,7 @@ const navItems = [
   },
   {
     name: "Leave a review",
-    href: "/leave-reivew",
+    href: "/leave-review",
   },
 ];
 
