@@ -1,8 +1,10 @@
 import { useState } from "react";
 import listings from "../data/riskAssesorListing";
 import Listing from "../components/riskAssesor";
+import { textData } from "../data/textData";
 
 function SwitchComponent() {
+  const spiels = textData.find((data) => data.id === "trainig-recommendations");
   const [active, setActive] = useState("Risk assessor");
 
   const handleClick = (role: string) => {
@@ -12,25 +14,21 @@ function SwitchComponent() {
   return (
     <>
       <span className="muted-text">
-        <p>
-          View a list of recommended training courses tailored to the hazards
-          and controls above by identifying whether you are a Risk Assessor or
-          Task Operator.
-        </p>
+        <p>{spiels?.content}</p>
       </span>
       <div className="switch-container">
         <div className="switch-toggle">
           <button
             onClick={() => handleClick("Risk assessor")}
-            className={active === "Risk assessor" ? "active" : ""}
+            className={active === spiels?.riskAssessor ? "active" : ""}
           >
-            Risk assessor
+            {spiels?.riskAssessor}
           </button>
           <button
             onClick={() => handleClick("Task operator")}
-            className={active === "Task operator" ? "active" : ""}
+            className={active === spiels?.taskOperator ? "active" : ""}
           >
-            Task operator
+            {spiels?.taskOperator}
           </button>
         </div>
         <div className="mt-6">
@@ -52,10 +50,7 @@ function SwitchComponent() {
                   htmlFor="switch-disabled-checked-checkbox"
                   className="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500"
                 >
-                  By ticking this box, I confirm that I have been trained to
-                  assess the risks involving the use of chemicals and hazardous
-                  substances through a separate course provider or one of the
-                  courses above.
+                  {spiels?.confirm}
                 </label>
               </div>
             </>

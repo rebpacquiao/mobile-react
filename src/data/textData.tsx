@@ -55,6 +55,15 @@ export const textData = [
     title: "H317: May cause an allergic skin reaction",
   },
   {
+    id: "trainig-recommendations",
+    content:
+      "View a list of recommended training courses tailored to the hazards and controls above by identifying whether you are a Risk Assessor or Task Operator.",
+    riskAssessor: "Risk assessor",
+    taskOperator: "Task operator",
+    confirm:
+      "By ticking this box, I confirm that I have been trained to assess the risks involving the use of chemicals and hazardous substances through a separate course provider or one of the courses above.",
+  },
+  {
     id: "confirmation",
     content:
       " I confirm that I have read & understood the content of the above assessment, and that I have been instructed on the hazards & control measures associated with the task including the task specific information. I also confirm that if the work environment changes or other hazards occur I will bring it to the attention of my immediate supervisor.",
