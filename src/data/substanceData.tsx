@@ -5,10 +5,20 @@ import Rectangle_819 from "../assets/img/Rectangle_819.png";
 
 export const data = [
   {
-    productName: "Industry Cleaner 500ml",
-    productCode: "0893 140",
-    manufacturer: "Wurth UK Ltd.",
-    sdsNumber: "9655096-00002",
+    title: "Product Name",
+    value: "Industry Cleaner 500ml",
+  },
+  {
+    title: "Product Code",
+    value: "0893 140",
+  },
+  {
+    title: "Manufacturer",
+    value: "Wurth UK Ltd.",
+  },
+  {
+    title: "SDS Number",
+    value: "9655096-00002",
   },
 ];
 

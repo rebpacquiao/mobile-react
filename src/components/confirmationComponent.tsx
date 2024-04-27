@@ -1,15 +1,11 @@
+import { textData } from "../data/textData";
+
 function confirmationComponent() {
+  const spiel = textData.find((data) => data.id === "confirmation");
   return (
     <form>
       <span className="mb-6 muted-text">
-        <p>
-          I confirm that I have read & understood the content of the above
-          assessment, and that I have been instructed on the hazards & control
-          measures associated with the task including the task specific
-          information. I also confirm that if the work environment changes or
-          other hazards occur I will bring it to the attention of my immediate
-          supervisor.
-        </p>
+        <p>{spiel?.content}</p>
       </span>
       <textarea
         id="message"
@@ -52,7 +48,7 @@ function confirmationComponent() {
       <div className="form-cta">
         <button
           type="submit"
-          className="text-dark bg-clear hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-dark bg-clear hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           clear
         </button>

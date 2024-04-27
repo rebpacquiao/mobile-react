@@ -1,38 +1,24 @@
 import { data, images, checkBoxData } from "../data/substanceData";
+import { textData } from "../data/textData";
 
 const DataSubstanceInformation = () => {
+  const spiels = textData.find((data) => data.id === "substance-information");
   return (
     <>
-      <h5>
-        <strong>SUBSTANCE INFORMATION</strong>
+      <h5 className="uppercase">
+        <strong>{spiels?.title}</strong>
       </h5>
       <ul className="data-list">
         {data.map((item, index) => (
           <li key={index} className="data-item">
-            <ul>
-              <li>
-                <strong className="mr-2">Product Name:</strong>
-                <span className="muted-text">{item.productName}</span>
-              </li>
-              <li>
-                <strong className="mr-2">Product Code:</strong>
-                <span className="muted-text">{item.productCode}</span>
-              </li>
-              <li>
-                <strong className="mr-2">Manufacturer:</strong>
-                <span className="muted-text">{item.manufacturer}</span>
-              </li>
-              <li>
-                <strong className="mr-2">SDS Number:</strong>
-                <span className="muted-text">{item.sdsNumber}</span>
-              </li>
-            </ul>
+            <strong className="mr-2">{item.title}:</strong>
+            <span className="muted-text">{item.value}</span>
           </li>
         ))}
       </ul>
 
-      <h5 className="mt-3">
-        <strong>Hazard Symbols</strong>
+      <h5 className="mt-3 uppercase">
+        <strong>{spiels?.hazardSymbols}</strong>
       </h5>
       <div className="list-img">
         {images.map((image, index) => (
@@ -61,11 +47,11 @@ const DataSubstanceInformation = () => {
         </label>
       </div>
       <div className="flex flex-col sm:flex-row">
-        <button className="mb-2 sm:mb-0 sm:mr-2 bg-mediumRisk hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
-          VIEW SAFETY DATA SHEET
+        <button className="mb-2 uppercase sm:mb-0 sm:mr-2 bg-mediumRisk hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
+          {spiels?.dataSheet}
         </button>
-        <button className="bg-mediumRisk hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
-          VIEW ONE PAGE ASSESSMENT PDF
+        <button className="bg-mediumRisk uppercase hover:bg-mediumRisk text-dark font-bold py-2 px-4 rounded-full">
+          {spiels?.assessmentPDF}
         </button>
       </div>
     </>

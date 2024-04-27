@@ -1,16 +1,16 @@
 import { images, checkBoxData, confirm } from "../data/aquaticLifeData";
 import Rectangle_796 from "../assets/img/Rectangle_796.png";
 import { Image, ConfirmItem, CheckBoxItem } from "../models/AquaticLifeModels";
+import { textData } from "../data/textData";
 
 const AquaticLifeComponent = () => {
+  const spiel = textData.find((data) => data.id === "aquatic-life");
   return (
     <>
       <div className="high-risk-border">
         <div className="flex-two-column-row">
           <img src={Rectangle_796} alt="Rectangle_750" />
-          <span className="muted-text">
-            H411: Toxic to aquatic life with long lasting effects
-          </span>
+          <span className="muted-text">{spiel?.title}</span>
         </div>
       </div>
       <div className="list-img">

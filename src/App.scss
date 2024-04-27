@@ -228,3 +228,13 @@ li.data-item ul li {
   border-radius: 0.6rem;
   position: relative;
 }
+
+.data-list {
+  background: #f5ecec;
+  padding: 10px 21px;
+  border-radius: 10px;
+
+  li {
+    line-height: 39px;
+  }
+}
